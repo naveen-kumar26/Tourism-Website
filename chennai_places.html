@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.sidenav {
+  height: 100%;
+  width: 167px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #73FF7C;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #FFFFFF;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #1D1E1C;
+  color:#73FF7C;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+</style>
+</head>
+
+
+<body style="font-family:georgia,serif;font-size:30px" bgcolor='#73FF7C'>
+
+
+
+
+<div class="sidenav" >
+  <a href="chennai_home.html">Chennai</a>
+  <a href="chennai_geography.html">Geography</a>
+  <a href="chennai_places.html">Places to see</a>
+  <a href="chennai_links.html">Other links</a>
+  <a href="Tn_Home.html">Main Page</a>
+</div>
+
+<div class="main">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<h1 align='center'>Places to Visit</h1>
+<br>
+<center><ul >
+<li><a  href="#be" >Marina Beach</a></li>
+<li><a  href="#azoo">Arignar Anna Zoological Park</a></li>
+<li><a  href="#mue">Government Museum</a></li>
+<li><a  href="#vgp">VGP Universal Kingdom</a></li></ul></center><br>
+
+<h3 id='be'>Marina Beach</h3>
+<center><img src='chennai_marina.jpg' ></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Situated in the city of Chennai in Tamil Nadu, Marina Beach is a natural urban beach along the Bay of Bengal. The beach is 
+stretched out to a distance of 13 kilometres making it the longest natural urban beach in the country, second largest in the world 
+and also the most crowded beach in India with almost 30,000 visitors a day. 
+
+With a white sandy shore that looks as though extending to infinity, the landscape of Marina Beach is a mesmerising and serene 
+sight to behold. The beach has a primarily sandy terrain and is dotted with plenty of merry-go-rounds and shops selling souvenirs. 
+You could take a walk along the Marina beach with your near and dear ones or even all alone and enjoy the cool evening sea breeze 
+along with a hot plate of crispy sundal and murukku. Watching the sun crawl upwards into the sky or even disappear into the ocean 
+from the beach, is an awe-striking and 
+enchanting experience.
+</p> 
+
+<h3 id='azoo'>Arignar Anna Zoological Park</h3>
+<center><img src='chennai_azoo.jpg' width=70% ></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+One of the most popular picnic spots in Vandalur, the Arignar Zoological Park is an amazing place to discover the flora and 
+fauna of the region.  A favourite weekend spot with both children and adults alike, the Arignar Zoo is situated at a distance of 
+32 kilometres from Chennai city.
+
+It is the largest zoo of its kind in South East Asia and is sprawled over an area of 1260 acres. In addition to having an extensive 
+collection of endemic and exotic animals, visitors can experience the wild first hand with a trip to safari parks where lions and 
+deer can be easily spotted.
+
+Housing as many as 138 different species of organisms, this destination is every nature lover's paradise. Arinagar Anna Zoological 
+Park is home to a variety of animals such as Himalayan brown bear, lion, tiger, elephant and Indian civit cat.
+
+The zoo also has a reptile house which houses various species of reptiles including the king cobra, python, viper any much more. In 
+addition to this, they have a small built-in Jurassic park which just adds on to the excitement. Elephant joy rides, children's
+ park and an education centre are amongst the other special features of the park.
+</p> 
+
+<h3 id='mue'>Government Museum</h3>
+<center><img src='chennai_museum.jpg' width=70% ></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Government Museum was established in 1851 and is the second oldest museum in the country after the Indian Museum in Kolkata. 
+Situated in Egmore suburb of Chennai, it is built in the Indo-Sarcenic style and houses a rich 
+collection of the works of Raja Ravi Varma.</p>
+
+<h3 id='vgp'>VGP Universal Kingdom</h3>
+<center><img src='chennai_gold.jpg' width=70%></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Situated on the East Coast Road in Chennai, VGP Universal Kingdom is a magnanimous amusement theme park in the city. 
+Besides the water park, the main highlights of the park are water cascades, 
+Paneer forts, statueman, Millennium Tower etc.
+</p> 
+
+
+
+
+</div>
+</body>
+</html>

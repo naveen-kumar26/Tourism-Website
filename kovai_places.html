@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.sidenav {
+  height: 100%;
+  width: 167px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FF96B0;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #FFFFFF;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #1D1E1C;
+  color:#FF96B0;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+</style>
+</head>
+
+
+<body style="font-family:georgia,serif;font-size:30px" bgcolor='#FF96B0'>
+
+
+
+
+<div class="sidenav" >
+  <a href="kovai_home.html">Coimbatore</a>
+  <a href="kovai_geography.html">Geography</a>
+  <a href="kovai_places.html">Places to see</a>
+  <a href="kovai_links.html">Other links</a>
+</div>
+
+<div class="main">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<h1 align='center'>Places to Visit</h1>
+<br>
+<center><ul >
+<li><a  href="#statue" >Adiyogi Shiva Statue</a></li>
+<li><a  href="#temple">Marudhamalai Hill Temple</a></li>
+<li><a  href="#dam">Siruvani Dam</a></li>
+<li><a  href="#falls">Vydehi Falls</a></li>
+<li><a  href="#monkey">Monkey Falls</a></li></ul></center><br>
+
+<h3 id='statue'>Adiyogi Shiva Statue</h3>
+<center><img src='kovai_statue.jpg' ></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Surrounded by verdant green farms at the foothills of Velliangiri Mountains in the Western Ghats, Adiyogi Shiva 
+Statue is the world’s biggest bust statue dedicated to the famous Hindu deity Shiva, which is carved out of 500 tonnes of steel. 
+Located in the Isha Yoga Complex in Coimbatore, 
+Tamil Nadu, the sculpture stands tall at the height of 112 feet.</p>
+
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+The Guinness World Book of Records recognised the statue as the “largest bust sculpture” which is 34.3-metre tall excluding plinth, 
+45 meters long and 7.62 meters wide. Designed by the founder of Isha Foundation- Sadhguru Jaggi Vasudev, the statue was inaugurated 
+by Prime Minister Narendra Modi on the 24th of February, 2017. The sculpture was constructed with the idea to inspire and 
+promote yoga, and the statue is called “Adiyoga” meaning “the first yogi” as Lord Shiva is known to be the originator of yoga.
+
+</p> 
+
+<h3 id='temple'>Marudhamalai Hill Temple</h3>
+<center><img src='kovai_hill.jpg' width=70% ></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+The Marudhamalai hill temple is located at a towering height of 500 ft in the highland on the Western Ghats. 
+15 kms away to north-west of Coimbatore city, the temple has an excellent invigorating atmosphere. 
+Vehicles are allowed to pass through the Marudhamalai temple and the devasthanam has granted three buses from the 
+low slope of the hill to get through the temple on top.</p>
+
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+The Marudhamalai temple has its main deity as Lord Muruga and the temple attributes quite delightful facilities to the habit of 
+making their visit a comforting one while offering their prayer to the deity. The major feature of this hill is that it grows 
+important medicinal herbs, 
+which is used extensively in making ayurvedic medicines.</b>
+</p> 
+
+<h3 id='falls'>Siruvani Dam</h3>
+<center><img src='kovai_siruvani.jpg' width=70% ></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Siruvani dam is situated some 37 kilometres to the west of Coimbatore city amidst the lush green Western Ghats. Siruvani dam is the 
+chief source to supply water to Coimbatore city. The dam is intertwined by underways and aqueducts for harnessing the hydel energy 
+for power generation and irrigation purposes from Aliyar, 
+Parambikulam, Nirar, Sholiyar, Thunakadavu, Palar, Thekadi rivers.</p>
+
+<h3 id='falls'>Vydehi Falls</h3>
+<center><img src='kovai_falls.jpg' width=70%></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+The Vydehi water falls is situated some 35 km away from the Coimbatore city. People who pay a visit to Coimbatore must make it a 
+point to visit the Vydehi water falls, as it is one of the most 
+familiar water fall and is highly known for its magnificence.</p>
+
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+The falls has pulled towards itself a large number of visitors because of its scenic attraction and beauty. 
+People can avail a taxi or cab to pay a visit to the extravagant Vydehi water falls. This can be placed on top of the 
+places-to-visit list when planning a vacation to Coimbatore. People can indulge into utmost pleasure of the scerenity of the place 
+and can make 
+their trip worth remembering by visiting these falls.
+</p> 
+
+<h3 id='monkey'>Monkey Falls</h3>
+<center><img src='kovai_monkey.jpg' width=70%></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Only 65 km away from the hustling and bustling city of Coimbatore is the peaceful Monkey Falls. Enveloped between evergreen 
+forests and rocky cliffs, the alluring waterfall brings together the entire scenery. Anyone in earshot of the humming Monkey 
+Waterfalls is inevitably drawn to these melodious sounds. The water swishes across the rocks joyfully and 
+dives into a pool of water as clear as cellophane.</p>
+
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+As the water thunders down like a giant waterspout, it forms bubbles of white foam where it merges with the pool. The spiky shrubs 
+surround the body of water as if they are crowning it and the sweet nectar fragrance of flowers take over the spirits of anyone 
+around them. Plummeting from a height, the fringes of the Monkey falls crash along the sides of the mountain and give a silver 
+lining to the fall. Frogs dancing around the gushing water, tiny birds chirping along joyously and numerous monkeys swaying across 
+the trees playfully. This soul-swelling magic of witnessing this waterfall in all its glory will 
+surely follow you all the way home.
+</p> 
+
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.sidenav {
+  height: 100%;
+  width: 167px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #C3FF71;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #FFFFFF;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #1D1E1C;
+  color:#C3FF71;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+</style>
+</head>
+
+
+<body style="font-family:georgia,serif;font-size:30px" bgcolor='#C3FF71'>
+
+
+
+
+<div class="sidenav" >
+  <a href="trichy_home.html">Trichy</a>
+  <a href="trichy_geography.html">Geography</a>
+  <a href="trichy_places.html">Places to see</a>
+  <a href="trichy_links.html">Other links</a>
+  <a href="Tn_Home.html">Main Page</a>
+</div>
+
+<div class="main">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<h1 align='center'>Places to Visit</h1>
+<br>
+<center><ul >
+<li><a  href="#rock" style='font-color=#378610'>Rockfort Temple</a></li>
+<li><a  href="#sri">Srirangam</a></li>
+<li><a  href="#falls">Puliyancholai Waterfalls</a></li>
+<li><a  href="#dam">Kallanai Dam</a></li></ul></center><br>
+
+<h3 id='rock'>RockFort Ganapathi Temple</h3>
+<center><img src='trichy_malai.jpg' ></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+By far the most popular place in all of Trichy is the <b>Rockfort Ganpathi Temple</b>. It derives its name from it's unique building 
+style. The temple structure comprises a huge rock, which is believed to be the <b>oldest rock in the world</b>, even older than 
+The Himalayan Mountains.</p>
+
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+After <b>climbing 344 steps</b>, the devotees reach the main temple area. The temple has two sub parts- the Thayumanaswamy, 
+which is dedicated to Lord Shiva and the Pillayar, which is dedicated to Lord Ganesha. The origins of the temple are traced back to 
+the 7th century. The Shiva temple contains the Lingam form of the Lord.
+</p> 
+
+<h3 id='sri'>Sri Ranganathar Temple</h3>
+<center><img src='trichy_sri.jpg' width=70% ></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Sri Ranganathaswamy Temple is situated in Srirangam Town of Trichy. The temple is devoted to Lord Ranganatha, a 
+<b>reclining form of Lord Vishnu</b>. The temple complex 
+along with the surrounding area covers a <b>total area of 156 acres</b>...</p>
+
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+It has been constructed in Dravidian style of architecture The temple is the largest functional temple in the world. The outstanding 
+architecture of the <b>temple includes 21 surrounding 'gopurams' along with an ornate gateway</b>, which is also the <b>tallest 'gopuram' of 
+India</b>. There is also a royal temple tower in the place, which covers a base area of 32500 sq. ft and has a height of 196 ft.The 
+temple also has <b>a hall with nearly 1000 decorated pillars</b>.
+</p> 
+
+<h3 id='falls'>Puliyancholai Waterfalls</h3>
+<center><img src='trichy_pulifalls.jpg' width=70% ></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Puliyancholai Waterfalls are situated at the base of Kolli Hills in Tiruchi. The mesmerizing 
+waterfalls are a popular site of tourism and receives a huge influx of visitors. The waterfalls are truly a spot of peace and 
+tranquility and offers solitude like no where else.</p>
+
+<h3 id='dam'>Kallanai Dam</h3>
+<center><img src='trichy_kaldam.jpg' width=70%></center>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Located at a distance of only 15 km from Tiruchirapalli, the Kallanai Dam is built across the flowing River Kaveri. It spans over 
+1079 feet and is over 66 feet wide! This ancient dam was originally <b>constructed about 2000 years ago</b>, and it is the <b>oldest 
+functional water regulator structure in the entire country</b>. It may not have much else to offer, but the mesmerising view is surely 
+going to be worth taking a detour. The dam also serves as an inspiration for 
+modern-day dams due to the excellent engineering behind it.</p>
+
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Also known as Grand Anicut, the enormous dam is famous not only because it is pertinent to the living of thousands of 
+households around it, but also because of its unmatched scenic beauty. It is constructed with rough stones, but they have been 
+indigenously supporting the <b>dam's structure for over 200 decades</b>. It is still in an excellent condition and is often frequented by 
+locals for picnics. One finds true peace here, watching the sunset and the overall spectacular view. Various new developments, 
+especially like a 
+<b>park, have also been made for kids.</b>
+</p> 
+
+
+
+
+</div>
+</body>
+</html>

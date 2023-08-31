@@ -1,0 +1,130 @@
+<html>
+<head>
+<style>
+
+.sidenav {
+  height: 100%;
+  width: 167px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #C3FF71;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #FFFFFF;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #1D1E1C;
+  color:#C3FF71;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+</style>
+</head>
+
+
+<body style="font-family:georgia,serif;font-size:30px" bgcolor='#C3FF71'>
+
+
+<div class="sidenav" >
+  <a href="trichy_home.html">Trichy</a>
+  <a href="trichy_geography.html">Geography</a>
+  <a href="trichy_places.html">Places to see</a>
+  <a href="trichy_links.html">Other links</a>
+  <a href="Tn_Home.html">Main Page</a>
+</div>
+
+
+<div class="main">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<h3>1.Districts of India</h3>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+<b>"Districts of India" </b>is an endeavour of NIC to provide comprehensive, accurate, reliable and one-stop source for the 
+information about the Districts under various State/UT administrations in India. The objective behind the Portal is to provide a 
+single window access to the information and services 
+being provided by the District Administrations of various States/UTs.
+</p><br>
+<center><a href="https://tiruchirappalli.nic.in" style="font-family: Arial,sans-serif;color:#074D02"><b>
+https://tiruchirappalli.nic.in</b></a></center>
+
+<br>
+<h3>2.Wikipedia</h3>
+<p style="font-family:georgia,serif;font-size:18px;line-height:1.6">
+Wikipedia is a free content, multilingual online encyclopedia written and maintained by a community of volunteers through a 
+model of 
+open collaboration, using a wiki-based editing system.
+</p>
+<center><a href="https://en.wikipedia.org/wiki/Tiruchirappalli" style="font-family: Arial,sans-serif;color:#074D02"><b>
+https://en.wikipedia.org/wiki/Tiruchirappalli</b></a></center>
+
+
+
+
+</div>
+</body>
+</html>
+
+
